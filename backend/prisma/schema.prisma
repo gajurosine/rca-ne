@@ -1,0 +1,38 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+
+// schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+//Added the Book model with name, author, publisher, publicationYear, subject fields
+//Added a unique constraint on the name field
+
+
+model User {
+  id          String @id @default(uuid())
+  firstName   String
+  lastName    String
+  email       String @unique
+  password    String
+}
+
+model Book {
+  id               Int      @id @default(autoincrement())
+  name             String   @unique
+  author           String
+  publisher        String
+  publicationYear  Int
+  subject          String
+}
