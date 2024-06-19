@@ -8,7 +8,7 @@ const baseRouter = express.Router();
 // Enable CORS preflight requests for all routes
 baseRouter.options("*", cors());
 
-// Middleware to set CORS headers
+// Middleware to set CORS headers  which allow any end point to be run on the server
 baseRouter.use((req, res, next) => {
     res.append('Access-Control-Allow-Origin', ['http://localhost:5173']);
     res.status(200);

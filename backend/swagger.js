@@ -6,7 +6,7 @@ const doc = {
   },
   servers: [
     {
-      url: "http://localhost:3450",
+      url: "http://localhost:3000",
       description: "Localhost",
     },
   ],
@@ -47,7 +47,7 @@ const doc = {
       }
     },
   },
-  host: "http://localhost:3450",
+  host: "http://localhost:3000",
 };
 
 const routes = ["./baseRouter.js"];

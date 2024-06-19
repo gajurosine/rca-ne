@@ -1,4 +1,5 @@
 const z = require("zod");
+require('dotenv').config();
 
 // Schema for creating a new user
 const createUserSchema = z.object({

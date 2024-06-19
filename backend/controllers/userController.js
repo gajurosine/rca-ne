@@ -21,6 +21,7 @@ const createUser = async (req, res) => {
         // Validate the request body against the schema
         const { firstName, lastName, email, password } = createUserSchema.parse(req.body);
 
+        console.log(firstName)
         // Check if the email is already taken
         const emailTaken = await prisma.user.findUnique({
             where: {
