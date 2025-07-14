@@ -71,7 +71,7 @@ const Dashboard: React.FC = () => {
         <Navbar />
         <div className="md:flex p-5 items-center justify-between">
           <span className="text-blue-700 font-poppins font-black mb-4">
-            RCA Library Management
+            School Library Management
           </span>
           <div className="flex items-center space-x-4">
             {/* Search input */}
