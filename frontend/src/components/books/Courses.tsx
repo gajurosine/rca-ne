@@ -2,16 +2,21 @@ import React from 'react';
 import Sidebar from '../sidebar/Sidebar';
 import Navbar from '../navbar/Navbar';
 import BookCard from './BookCard';
-import bgImage from '../../assets/logo/dash.avif'; // Adjust the path as necessary
+import bgImage from '../../assets/logo/rcalogo.jpeg'; // Adjust the path as necessary
 
 // Array of course titles to be displayed as book cards
 const courses = [
-  "Project Management", "Advanced Embedded Systems", "Software Engineering II", 
-  "Applied Mathematics III", "English III", "DevOps", "Applied Physics III", 
-  "Network Security"
+  { title: "Project Management", file: "/books" },
+  { title: "Advanced Embedded Systems", file: "/books/embedded_systems.pdf" },
+  { title: "Software Engineering II", file: "/books/software_eng.pdf" },
+  { title: "Applied Mathematics III", file: "/books/math3.pdf" },
+  { title: "English III", file: "/books/english3.pdf" },
+  { title: "DevOps", file: "frontend/src/components/books/Engineering-DevOps.pdf" },
+  { title: "Applied Physics III", file: "frontend/src/components/books/Engineering-DevOps.pdf" },
+  { title: "Network Security", file: "/books/network_security.pdf" },
 ];
 
-const Books: React.FC = () => {
+const Books: React.FC = () => {   
   return (
     <div
       className="flex h-screen font-poppins bg-cover bg-center"

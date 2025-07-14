@@ -1,15 +1,17 @@
-import React from 'react';
-
 interface BookCardProps {
   title: string;
+  file: string; // path to PDF or book file
 }
 
-// BookCard component to display the title of the book
-const BookCard: React.FC<BookCardProps> = ({ title }) => {
+const BookCard: React.FC<BookCardProps> = ({ title, file }) => {
+
+  
   return (
-    <div className="bg-gray-900 text-white font-bold p-4 rounded-lg transform transition-transform duration-300 ease-in-out shadow-md hover:shadow-lg hover:scale-105">
-      {title}
-    </div>
+    <a href={file} target="_blank" rel="noopener noreferrer">
+      <div className="bg-white p-4 rounded shadow hover:bg-blue-100 cursor-pointer transition-all">
+        <h3 className="text-md font-semibold text-blue-900">{title}</h3>
+      </div>
+    </a>
   );
 };
 
