@@ -9,13 +9,13 @@ import BookCard from './BookCard';
 import bgImage from '../../assets/logo/dash.avif';
 
 const courses = [
-  { title: "Project Management", file: "/books/project_management.pdf" },
-  { title: "Advanced Embedded Systems", file: "/books/embedded_systems.pdf" },
-  { title: "Software Engineering II", file: "/books/software_eng.pdf" },
-  { title: "Applied Mathematics III", file: "/books/math3.pdf" },
-  { title: "English III", file: "/books/english3.pdf" },
-  { title: "DevOps", file: "/books/devops.pdf" },
-  { title: "Applied Physics III", file: "/books/physics3.pdf" },
+  { title: "Project Management", file: "/book/Project_Management.pdf" },
+  { title: "Advanced Embedded Systems", file: "/book/Advanced-Embedded-Systems.pdf" },
+  { title: "CYBER SECURITY", file: "/book/CYBER SECURITY.pdf" },
+  { title: "Applied Mathematics III", file: "/book/M-III.pdf" },
+  { title: "English III", file: "/book/Essential-English.pdf" },
+  { title: "DevOps", file: "/book/Learning DevOps.pdf" },
+  { title: "Applied Physics III", file: "/book/Applied Physics.pdf" },
   { title: "Network Security", file: "book/ComputerAnd_Network_Security.pdf" },
 ];
 
