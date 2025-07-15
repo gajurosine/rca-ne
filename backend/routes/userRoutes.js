@@ -11,12 +11,12 @@ router.post("/login", login);
 
 
 // Route to get a specific user by ID
-router.get('/:id', readUser);
+router.get('/:userId', readUser);
 
 // Route to update a specific user by ID
-router.put('/user/:id', updateUser);
+router.put('/user/:userId', updateUser);
 
 // Route to delete a specific user by ID
-router.delete('/user/:id', deleteUser);
+router.delete('/user/:userId', deleteUser);
 
 module.exports = router;
